@@ -1,0 +1,38 @@
+This is an inventory management application capable of coordinating staffs, donors, beneficiaries, volunteers and admins of the application on various functionalities.  The application will be used by the donors to inform the food availability and the beneficiaries to add the request for food. The staffs will be mediating the process and volunteers will be picking the food and deliver it to beneficiaries.
+
+Once the requirement is matched, based on a pre-configured rule engine, the location of delivery is determined automatically and instructed to the volunteer who is picking the food. The Volunteer will be scanning the barcode in the food and from the preloaded dataset, we will be pulling  and displaying the data. Based on the pickup information, the number of meals, the weight of meals, H2O and CO2 numbers of the food, % fit for consumption are calculated. The food with earlier use by date will be used to match the food request before the one with later stage.
+
+Once the delivery type is confirmed, the warehouse locations are decided and the inventory is updated accordingly. If the food is brought into the warehouse as a temporary transit, we will be maintaining the details as a seperate inventory system and processed out for delivery.
+
+Every stakeholder of the application will have reports and dashboards with data associated to them. There will be access control for modules, data and operations that can be performed on the data based on the user type.
+######################################################################
+Please note : 
+
+We have arrived the tentative hours based on the documents ahred with us and the tentative data that has been shared. The defenitive number of implementation hours can be arrived only when all the open items are addressed. We have listed the open items that has been discussed so far.
+
+1.Detailed activity list each role will be performing which has to be configured as permission sets
+2.Weight of individual food items and number of items in an unit
+3.Rule sample which will be set for the pickup volunteers regarding the destination of the food
+4. Warehouse and warehouse racks related fields for inventory management
+5.The numbers used for arriving at the calculated data as discussed
+	Calories 
+    Meal count calculation for switzerlandt
+	% CO2 /H20 saved from scrapping
+
+The open items lsited above are based on the current flow we have discussed. In case of any additional flow that has to be added in the process, we may have to restructure the business scope document and the open items list may change accordingly.
+
+
+
+
+#########################################################
+
+
+The numbers used for arriving at the calculated data as discussed
+   - CO2 /H20 - I already shared these with you, You just need to multiply by the product weight
+   - Calories - I don't have this , will need to be added later
+   - Meal count. So I shared the Malaysia number with you (350g ). You just need to add up the total weight of the donor delivery and divide by this.  There will be a similar number for switzerland but I don't have it yet
+- Price per donation - just add up all the prices for each donor delivery
+- weight per delivery - just add up all product weight
+- number donations / deliveries - this should  be a record of the number of donations and deliveries we make 
+- % food type / % scrapped  - this will just use the total kg of each product delivered to determine the % in each delivery
+- % CO2 /H20 saved from scrapping - we dont have these figures just now
